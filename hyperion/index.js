@@ -31,7 +31,7 @@ app.set('trust proxy', true);
 app.use(toobusy);
 app.use(
   rateLimiter({
-    max: 5,
+    max: 10,
     duration: '20s',
   })
 );
